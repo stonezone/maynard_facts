@@ -232,16 +232,30 @@ def categorize_fact(fact: str) -> str:
     """Determine the category of a fact based on keywords."""
     fact_lower = fact.lower()
 
-    if any(word in fact_lower for word in ["wine", "vineyard", "cellar", "grape", "merkin", "caduceus"]):
+    if any(word in fact_lower for word in ["hawaii", "honolulu", "blaisdell", "aloha"]):
+        return "Hawaii"
+    elif any(word in fact_lower for word in ["grammy", "award"]):
+        return "Grammy Awards"
+    elif any(word in fact_lower for word in ["danny carey", "drummer", "drums", "tabla", "polyrhythm"]):
+        return "Danny Carey"
+    elif any(word in fact_lower for word in ["adam jones", "guitarist", "special effects", "jurassic", "terminator"]):
+        return "Adam Jones"
+    elif any(word in fact_lower for word in ["justin chancellor", "bassist", "peach", "wal bass"]):
+        return "Justin Chancellor"
+    elif any(word in fact_lower for word in ["wine", "vineyard", "cellar", "grape", "merkin", "caduceus", "harvest"]):
         return "Winemaker"
     elif any(word in fact_lower for word in ["army", "military", "west point", "enlisted"]):
         return "Military"
     elif any(word in fact_lower for word in ["jiu-jitsu", "jiu‑jitsu", "black belt", "martial"]):
         return "Martial Arts"
-    elif any(word in fact_lower for word in ["tool", "ænima", "lateralus", "fibonacci"]):
+    elif any(word in fact_lower for word in ["fear inoculum", "13-year", "13 year"]):
+        return "Fear Inoculum"
+    elif any(word in fact_lower for word in ["puscifer"]):
+        return "Puscifer"
+    elif any(word in fact_lower for word in ["perfect circle", "mer de noms", "thirteenth step", "howerdel"]):
+        return "A Perfect Circle"
+    elif any(word in fact_lower for word in ["tool", "aenima", "ænima", "lateralus", "fibonacci", "undertow", "opiate", "10,000 days"]):
         return "Tool"
-    elif any(word in fact_lower for word in ["puscifer", "perfect circle"]):
-        return "Side Projects"
     elif any(word in fact_lower for word in ["charity", "benefit", "rainn", "justice", "philanthrop"]):
         return "Philanthropy"
     else:

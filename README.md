@@ -9,7 +9,7 @@ A dark, Tool-inspired web app that displays random facts about **Maynard James K
 ## Features
 
 - **Dark Tool-Inspired UI** — Custom styling with Cinzel typography and gold accents
-- **25+ Curated Facts** — About Maynard's music, winemaking, martial arts, and more
+- **85+ Curated Facts** — About Maynard, Tool, A Perfect Circle, Puscifer, and all band members
 - **Fact Categories** — Auto-categorized as Tool, Winemaker, Military, etc.
 - **Royalty-Free Images** — Sourced from [Unsplash](https://unsplash.com)
 - **Mobile Responsive** — Works on all devices
