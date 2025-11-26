@@ -312,7 +312,7 @@ def main() -> None:
     # Show header image (cycles through images based on fact count)
     image_index = st.session_state.fact_count % len(HEADER_IMAGES)
     st.markdown('<div class="image-container">', unsafe_allow_html=True)
-    st.image(HEADER_IMAGES[image_index], use_container_width=True)
+    st.image(HEADER_IMAGES[image_index], width="stretch")
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Footer
